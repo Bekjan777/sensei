@@ -1,14 +1,14 @@
 import React from 'react';
 import {Button} from "@/components/ui/button";
 
-const SubscriptionCard = ({color }) => {
+const SubscriptionBasic = ({price}) => {
   return (
-    <div className="relative w-full h-[300px] border-[2px] border-black rounded-xl flex flex-col overflow-hidden">
+    <div className="relative w-[300px] h-[300px] border-[2px] border-black rounded-xl flex flex-col overflow-hidden">
       <div className="flex flex-col items-center h-full w-full">
-        <div className="flex bg-black flex-col items-center justify-center w-full">
-          <div className="flex text-white flex-col items-center justify-center my-1 w-full">
+        <div className="flex  flex-col items-center justify-center w-full">
+          <div className="flex flex-col items-center justify-center my-1 w-full">
             <h1 className="text-2xl font-bold">Basic</h1>
-            <p>plan</p>
+            <span className="text-base">{price}$</span>
           </div>
           <div className="w-full h-[1px] bg-black opacity-25"></div>
         </div>
@@ -18,11 +18,11 @@ const SubscriptionCard = ({color }) => {
             <p>• Lorem ipsum dolor sit ame</p>
             <p>• Lorem ipsum dolor sit ame</p>
           </div>
-          <Button className="w-full">To Purchase</Button>
+          <Button variant="outline" className="w-full">To Purchase</Button>
         </div>
       </div>
     </div>
   );
 };
 
-export default SubscriptionCard;
+export default SubscriptionBasic;
