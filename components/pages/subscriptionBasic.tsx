@@ -1,6 +1,9 @@
 import React from 'react';
 import {Button} from "@/components/ui/button";
 
+
+
+
 const SubscriptionBasic = ({price}) => {
   return (
     <div className="relative w-[300px] h-[300px] border-[2px] border-black rounded-xl flex flex-col overflow-hidden">
